@@ -1,14 +1,11 @@
-@font-face {
-     }
 
      /* RESET */
 
 
 *,*::after,*::before {
-    margin: ;
-    padding: ;
-    box-sizing: ;
-    font-family: ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
 }
 
 
@@ -19,8 +16,19 @@
 :root {
 /* COLORS */
 
+--Darkcyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+
+
+--Verydarkblue: hsl(212, 21%, 14%);
+--Darkgrayishblue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+
+
 
 /* FONTS */
+--P:0.875rem; 
+
 
 
 /* BORDERS */
@@ -30,29 +38,114 @@
 } 
 
        /* UTILITY-CLASSES */
+       img {
+        width: 100%;
+        block-size: auto;
+        border-radius: 15px 15px 0 0;
+       }
 
 
 
-       /* HTML */
+       /* HTML */ 
+       html {
+        background-color: var(--Cream);
+       }
 
 
        /* BODY */
+
+       body{
+        width:50%;
+        height: auto;
+        margin:100px auto;
+        background-color: var(--White);
+        border-radius: 15px;
+
+        
+       }
 
 
 
        /* HEADER */
 
        /* MAIN */
-
+         main {
+            padding: 0px 15px;
+         }
 
        /* FOOTER */
 
+       footer {
+        padding: 0px 15px;
+        
+     }
+
        /* FIGURE */
+       figure {
+         min-inline-size: 100%;
+         border-radius: 15px 15px 0 0;
+       }
+
+
+       figcaption {
+        font-family: Montserrat;
+        letter-spacing: 6px;
+        margin:20px 0px 5px;
+        padding: 0px 15px;
+        font-weight: 300;
+       }
 
 
 
        /* PARAGRAPHS */
+       p {
+        font-size: var(--P);
+        font-family:Montserrat;
+        margin-bottom: 15px;
+        line-height: 1.5;
+        font-weight: 300;
+        
 
+       }
+       
+         span{ 
+            font-family:Francuas;
+            margin-bottom: 20px;
+            display: inline-block;
+            font-weight: 500;
+            
+         }
+
+         .price {
+            color: var(--Darkcyan);
+            font-family: Francuas;
+            font-weight: 700;
+            font-size: 1.6rem;
+         }
+         .discount {
+            margin-left: 5px;
+            font-size: var(--P);
+            text-decoration: line-through;
+         }
 
        /* Hs */
+       h1 {
+         font-family: Fraunces;
+         margin-bottom: 5px;
+         font-weight: 700;
+         text-wrap: wrap;
+       }
 
+       a {
+        padding:20px;
+        display: block;
+        text-align: center;
+        font-family: Montserrat;
+        background-color: var(--Darkcyan);
+        color: var(--White);
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 7.5px;
+       }
+
+       
