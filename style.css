@@ -40,7 +40,7 @@
        /* UTILITY-CLASSES */
        img {
         width: 100%;
-        block-size: 100%;
+        block-size:100%;
         border-radius: 15px 15px 0 0;
        }
 
@@ -56,7 +56,7 @@
 
        body{
         width:85%;
-        height: 50%;
+        height: auto;
         margin:100px auto;
         background-color: var(--White);
         border-radius: 15px;
@@ -70,19 +70,18 @@
 
        /* MAIN */
          main {
-            padding: 0px 15px;
+            padding: 0px 15px 15px;
          }
 
        /* FOOTER */
 
-       footer {
-        padding: 0px 15px 15px;
+       
         
-     }
+     
 
        /* FIGURE */
        figure {
-         min-inline-size: 100%;
+         inline-size: 100%;
          border-radius: 15px 15px 0 0;
        }
 
@@ -90,7 +89,7 @@
        .perfume {
         font-family: Montserrat;
         letter-spacing: 6px;
-        font-weight: 300;
+        font-weight: 150;
         margin:17px 0px 10px
        }
 
@@ -103,28 +102,35 @@
         margin-bottom: 15px;
         line-height: 1.5;
         font-weight: 300;
+
         
 
        }
+
+       .prices {
+        text-wrap: nowrap;
+       }
        
          span{ 
-            font-family:Francuas;
-            margin-bottom: 20px;
-            display: inline-block;
-            font-weight: 500;
             
+            margin-bottom: 5px;
+            display: inline-block;
+            
+                   
          }
 
          .price {
             color: var(--Darkcyan);
-            font-family: Francuas;
+            font-family: Fraunces;
             font-weight: 700;
             font-size: 1.6rem;
          }
          .discount {
-            margin-left: 5px;
+            margin-left: 30px;
             font-size: var(--P);
-            text-decoration: line-through;
+            text-decoration:line-through;
+            font-weight: 300;
+            font-family: Montserrat;
          }
 
        /* Hs */
@@ -133,6 +139,7 @@
          margin-bottom: 5px;
          font-weight: 700;
          text-wrap: wrap;
+         
        }
 
        a {
@@ -147,14 +154,47 @@
         border-radius: 7.5px;
        }
 
-       @media screen and (min-width:1440px) {
+       a:hover {
+        background-color:  hsl(158, 42%, 21%);
+       }
+
+       @media screen and (min-width:1080px) {
         body {
-          display: flex;
+          width: 686px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          margin: 200px auto;
+          
         }
+
         main {
           display: flex;
           flex-direction: column;
+          justify-content:space-evenly;
+          padding: 25px;
+          gap:;
+          
+
         }
+           h1 {
+            font-size: 1.5rem
+           }
+        .price {
+            font-size: 2em;
+        }
+        .discount {
+          font-size: 1.5em;
+          font-weight: lighter;
+        }
+
+        figure {
+          border-radius: 15px 0 0 15px;
+        }        
+        img {
+          border-radius: 15px 0 0 15px;
+        }        
+
+        
        }
 
        
